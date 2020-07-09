@@ -59,7 +59,7 @@
 #undef USE_TELEMETRY_SRXL
 #endif
 
-#define ENABLE_DSHOT_DMAR       DSHOT_DMAR_ON
+#define ENABLE_DSHOT_DMAR       DSHOT_DMAR_OFF
 
 #define LED0_PIN                PB3
 #define USE_BEEPER 
@@ -162,3 +162,25 @@
 #define TARGET_IO_PORTF         (BIT(0)|BIT(1)|BIT(4))
 #define USABLE_TIMER_CHANNEL_COUNT 6
 #define USED_TIMERS             (TIM_N(2) |TIM_N(3) |TIM_N(4) | TIM_N(8))
+
+
+//#define USE_OVERCLOCK
+#define USE_DSHOT_TELEMETRY
+#define USE_DSHOT_TELEMETRY_STATS
+#define USE_RPM_FILTER
+#define USE_DYN_IDLE
+#define USE_ITERM_RELAX
+#define USE_RC_SMOOTHING_FILTER
+#define USE_TPA_MODE
+#define USE_CCM_CODE
+#define USE_INTERPOLATED_SP
+#define USE_ABSOLUTE_CONTROL
+#define USE_THROTTLE_BOOST
+#define USE_QUAD_MIXER_ONLY
+
+#undef USE_SERVOS
+#undef USE_PPM
+#undef USE_ESCSERIAL
+#undef USE_BARO
+#undef USE_RANGEFINDER
+#undef USE_ACRO_TRAINER
