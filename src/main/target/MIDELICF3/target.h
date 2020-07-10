@@ -22,6 +22,8 @@
 
 #define TARGET_BOARD_IDENTIFIER "MIF3"
 
+#define USE_TELEMETRY_SMARTPORT
+#define USE_TELEMETRY_FRSKY_HUB
 
 #undef USE_SERIAL_RX
 #undef USE_CRSF_CMS_TELEMETRY
@@ -90,7 +92,7 @@
 #define USE_SDCARD_SPI
 #define SDCARD_SPI_INSTANCE                 SPI2
 #define SDCARD_SPI_CS_PIN                   PB12
-#define SDCARD_DMA_CHANNEL_TX               DMA1_Channel5
+//#define SDCARD_DMA_CHANNEL_TX               DMA1_Channel5
 
 #define USE_ADC
 #define ADC_INSTANCE            ADC1
